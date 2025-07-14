@@ -1,5 +1,5 @@
 .about-section {
-    background-image: url(../../assets/fond-écran.webp); 
+    background: linear-gradient(180deg, #0d2b16 0%, #0a0a0a 100%); 
     padding: 80px 20px;  
     color: #f8f8f8;  
     text-align: center;  
