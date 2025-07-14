@@ -1,0 +1,148 @@
+.formulaire {
+    margin: 0 auto;
+    padding: 0 20%;
+}
+.formulaire-intro-texte {
+    padding: 20px 0;
+}
+.formulaire-intro-titre {
+    font-size: 3.5rem;
+    color: green;
+    font-weight: bold;
+    margin: 0;
+    
+}
+.formulaire-intro-description {
+    font-size: 2.5rem;
+    color: #f8f8f8;
+    margin: 10px 0;
+}
+.main-form-container { /* Nouvelle classe pour le formulaire principal */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.form-group-row {
+    display: flex;
+    gap: 40px; /* Espace entre les groupes gauche et droite */
+    flex-wrap: wrap; /* Permet aux groupes de passer à la ligne sur petits écrans */
+}
+.form-field-group { /* Remplace left-group/right-group pour une meilleure sémantique */
+    flex: 1; /* Chaque groupe prend une part égale de l'espace disponible */
+    min-width: 280px; /* Empêche le groupe de devenir trop petit */
+    display: flex;
+    flex-direction: column; /* Les éléments de chaque groupe s'empilent */
+    gap: 5px; /* Espace entre label et input */
+}
+.form-field-group label {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #f8f8f8;
+    margin-bottom: 5px;
+}
+.form-field-group label span {
+    color: green; /* Couleur pour l'astérisque obligatoire */
+}
+.form-field-group input[type="text"],
+.form-field-group input[type="email"],
+.form-field-group textarea {
+    width: 100%; /* Prend toute la largeur disponible de son parent */
+    padding: 10px;
+    border: 3px solid green;
+    color: #f8f8f8;
+    background-color: black; /* Fond sombre pour le contraste */
+    border-radius: 5px;
+    font-size: 1.5em;
+    box-sizing: border-box; /* Inclut padding et border dans la largeur totale */
+}
+.form-field-group textarea {
+    resize: vertical; /* Permet de redimensionner verticalement */
+}
+.input-error {
+    border-color: #f7a69e !important; /* Bordure rouge pour les champs en erreur */
+}
+.error-message {
+    color: #e74c3c;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+/* Style pour le groupe de champ pleine largeur (message) */
+.full-width-group {
+    width: 100%;
+    min-width: unset; /* Annule le min-width des autres groupes pour celui-ci */
+}
+/* Style du bouton Envoyer */
+.form-submit {
+    width: 100%; /* Prend toute la largeur disponible */
+    background-color: green;  
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0; 
+    align-self: center; 
+}
+.form-submit:hover:not(:disabled) {
+    background-color: darkgreen;  
+}
+/* Style du bouton désactivé */
+.form-submit:disabled {
+    background-color: #444343; /* Couleur grise quand désactivé */
+    cursor: not-allowed; /* Curseur "interdit" */
+}
+/* Styles pour le message de soumission */
+.submit-message {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.submit-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+@media (max-width: 768px) {
+.formulaire {
+    width: 90%;
+    padding: 0; 
+}
+.formulaire-intro-texte {
+    padding-bottom: 0;
+}
+.formulaire-intro-titre{
+    font-size: 1.6rem;
+}
+.formulaire-intro-description {
+    font-size: 1.2rem;
+}
+.main-container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    }
+label {
+    font-size: 1.5rem;
+    }
+.left-group,
+.right-group {
+    width: 100%; 
+    }
+.item {
+    width: 100%; 
+    }
+
+.form-field-group label {
+    font-size: 1.8rem; 
+}
+
+}

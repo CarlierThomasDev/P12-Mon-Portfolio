@@ -1,0 +1,76 @@
+.introduce-me {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    background-size: 60vw auto;
+    background-position: right center;
+    object-fit: cover;
+}
+.introduce-title {
+    padding: 5% 0 0;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: green;
+}
+.introduce-subtitle {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+.introduce-description {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.button-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+button {
+    padding: 10px 20px;
+    margin-right: 1.5%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+button:hover {
+    background-color: green;
+}
+
+@media (min-width: 320px) and (max-width: 728px) {
+.introduce-me{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+}
+.introduce-title {
+    font-size: 1.7rem;
+}
+.introduce-subtitle {
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+.introduce-description {
+    font-size: 0.9rem;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+button {
+    width: 70%;
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+}

@@ -1,0 +1,225 @@
+.projects-section {
+    background-color: #1a1a1a; /* Fond sombre */
+    /* padding: 80px 20px; */
+    color: #f8f8f8;
+    text-align: center;
+}
+
+.projects-container {
+    max-width: 1200px; /* Plus large pour la grille de projets */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.projects-container h2 {
+    font-size: 2.5rem;
+    color: green; /* Votre couleur verte */
+    margin-bottom: 20px;
+}
+
+.projects-intro {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #c0c0c0;
+}
+
+/* dans projets.css */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Garde cette base */
+  gap: 50px; /* AUGMENTE cette valeur, par exemple 50px ou 60px */
+  justify-content: center;
+  align-items: flex-start; /* Important pour que les cartes s'alignent en haut */
+  padding: 20px; /* Ajoute un padding pour que les cartes ne touchent pas les bords de l'écran */
+}
+
+.project-card {
+    background-color: #2a2a2a; /* Fond de la carte */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Important pour les bords arrondis de l'image */
+    display: flex;
+    flex-direction: column; /* Contenu de la carte empilé */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Léger effet de soulèvement au survol */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.project-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour les images */
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recadre l'image pour couvrir la zone */
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05); /* Zoom léger de l'image au survol */
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Calque sombre sur l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease;
+    gap: 15px;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1; /* Visible au survol de la carte */
+}
+
+.overlay-button {
+    background-color: green; /* Bouton avec votre vert */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: darkgreen;
+}
+
+button{
+    background: green;
+    color: #f8f8f8;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.project-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permet à la zone info de prendre l'espace restant si les cartes ont des hauteurs différentes */
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    color: green; /* Nom du projet en vert */
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #c0c0c0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Permet à la description de prendre l'espace */
+}
+
+.project-tech-list {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap; /* Les tags peuvent passer à la ligne */
+    gap: 8px; /* Espace entre les tags */
+}
+
+.project-tech-tag {
+    background-color: blue; /* Votre couleur bleue pour les tags */
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    gap: 15px;
+}
+
+.project-link-button {
+    background-color: #555; /* Gris foncé pour GitHub */
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-link-button:hover {
+    background-color: #777;
+}
+
+.project-link-button.primary { /* Pour le bouton "Voir la Démo" s'il est plus important */
+    background-color: green; /* Bouton primaire en vert */
+}
+
+.project-link-button.primary:hover {
+    background-color: darkgreen;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+        padding: 0 10px;
+    }
+    button{
+   width: 100%;
+}
+
+    .project-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .project-image-wrapper {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 50px 10px;
+    }
+    .projects-container h2 {
+        font-size: 2rem;
+    }
+    .projects-intro {
+        font-size: 1rem;
+    }
+    .project-info {
+        padding: 20px;
+    }
+    .project-image-wrapper {
+        height: 160px;
+    }
+    .project-link-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    .overlay-button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}

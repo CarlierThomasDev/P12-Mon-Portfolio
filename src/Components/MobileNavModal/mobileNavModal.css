@@ -1,0 +1,45 @@
+.mobile-nav-modal {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #1a1a1a; /* Couleur de fond de votre modale */
+    padding: 5em 1em 0 2em; /* Ajustez le padding pour l'espacement */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0); 
+    z-index: 999;
+    display: flex; 
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.mobile-nav-modal .mobile-nav-close-btn {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    background: none;
+    border: none;
+    color: #F8F8F8; /* Couleur du X */
+    font-size: 1.5rem; /* Taille du X */
+    width: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Assurez-vous qu'il est au-dessus des liens */
+}
+.mobile-nav-modal a {
+    text-decoration: none;
+    color: #F8F8F8;
+    font-size: 1.3rem;
+    width: 50%;
+    padding: 0.8em 0;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+.mobile-nav-modal a:hover {
+    background-color: green;
+    color: white;
+}

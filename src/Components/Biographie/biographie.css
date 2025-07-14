@@ -1,0 +1,159 @@
+.about-section {
+    background-image: url(../../assets/fond-écran.webp); 
+    padding: 80px 20px;  
+    color: #f8f8f8;  
+    text-align: center;  
+    background-size: cover;
+    background-position: top;
+}
+.about-title {
+    width: 80%;  
+    margin: 0 auto;
+    font-size: 3.5rem;  
+    margin-bottom: 20px;  
+    color: #f8f8f8;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+.about-container {
+    max-width: 900px;  
+    margin: 0 auto;
+    background-color: #2a2a2a; 
+    border: 1px solid green; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    gap: 40px;  
+}
+.profile-card {
+    text-align: center;
+    flex-shrink: 0;
+    margin-top:50px;  
+}
+img.profile-photo {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%;  
+    object-fit: cover;  
+    border: 4px solid green;  
+    box-shadow: 0 0 0 8px rgba(0, 128, 0, 0.2);  
+    margin-bottom: 20px;
+}
+.profile-name {
+    font-size: 2.8rem;  
+    color: green;  
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+.profile-title {
+    font-size: 1.4rem;
+    color: #f8f8f8;  
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+.bio-content {
+    text-align: left;  
+    line-height: 1.7;  
+    font-size: 1.15rem;
+    max-width: 700px;  
+}
+.bio-content h2 {
+    font-size: 2.2rem;
+    color: #f8f8f8;
+    margin-bottom: 25px;
+    text-align: center;  
+}
+.bio-content p {
+    margin-bottom: 15px;  
+    color: #c0c0c0;  
+}
+
+@media (min-width: 769px) { 
+.about-container {
+    flex-direction: row;  
+    justify-content: center;  
+    align-items: flex-start;  
+    text-align: left;  
+    padding: 60px;  
+    }
+.profile-card {
+    flex: 0 0 250px;  
+    margin-right: 40px;  
+    text-align: center;
+    }
+.bio-content {
+    flex: 1;  
+    margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+.about-title {
+    font-size: 2rem;
+    }
+.about-section {
+    padding: 50px 15px;
+    }
+.about-container {
+    padding: 25px;
+    gap: 30px;
+    }
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    }
+.profile-name {
+    font-size: 2.2rem;
+    }
+.profile-title {
+    font-size: 1.2rem;
+    }
+.bio-content h2 {
+    font-size: 2rem;
+    }
+.bio-content p {
+    font-size: 1rem;
+    }
+}
+
+/* bouton envoyer le CV */
+.bio-content {
+    margin-top: 30px; 
+}
+.cv-link-container {
+    text-align: center;  
+    margin-top: 30px; 
+}
+.cv-download-button {
+    background-color: green;  
+    color: white;
+    font-size: 1.2rem;  
+    padding: 12px 25px;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;  
+    display: inline-block;  
+    font-weight: bold;  
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.cv-download-button:hover {
+    background-color: darkgreen;  
+    transform: translateY(-2px);  
+}
+
+/* ... (Vos media queries existantes pour le responsive) ... */
+
+@media (min-width: 769px) {
+.bio-content {
+        text-align: left; 
+    }
+
+    .cv-link-container {
+        text-align: center;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
