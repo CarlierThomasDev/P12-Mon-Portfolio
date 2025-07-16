@@ -6,7 +6,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Import
 import ohmyfoodImage from '../../assets/ohmyfood.webp';
 import sophieBluelImage from '../../assets/sophie-bluel.webp';
 import argentBankImage from '../../assets/argent-bank.webp';
-import kasaImage from '../../assets/kasa.webp';
+import KasaImage from '../../assets/Kasa.webp';
 
 export default function Projets() {
 
@@ -43,7 +43,7 @@ export default function Projets() {
       name: 'Kasa - Application de Location Immobilière',
       description: "Dans ce projet, j'ai développé le front-end complet d'une application web de location immobilière, en utilisant React pour créer une expérience utilisateur moderne et réactive. La gestion de la navigation entre les différentes pages a été configurée avec React Router, assurant un parcours utilisateur fluide et intuitif. J'ai mis l'accent sur la logique de présentation des données et le développement de composants React modulaires, en m'appuyant sur des données simulées issues d'un fichier JSON. Ce projet a également été l'occasion de mettre en œuvre des animations CSS et d'organiser le style avec Sass, pour une interface visuellement attrayante et un code CSS maintenable.",
       technologies: ['React', 'React Router', 'Composants React', 'Animations CSS', 'Sass', 'JSON Data', 'Vite', 'HTML', 'CSS'],
-      image: kasaImage,
+      image: KasaImage,
       githubLink: 'https://github.com/CarlierThomasDev/P7-Kasa',
       liveDemoLink: 'https://carlierthomasdev.github.io/P7-Kasa/'
     }
