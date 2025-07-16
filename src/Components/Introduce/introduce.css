@@ -1,42 +1,44 @@
 .introduce-me {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 95vh;
+    background: #0a0a0a;
     color: white;
     position: relative;
-    background-size: 60vw auto;
-    background-position: right center;
-    object-fit: cover;
 }
 .introduce-title {
-    padding: 5% 0 0;
-    width: 80%;
+    text-align: center;
+    padding: 8% 0 0;
     margin: 0 auto;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: green;
 }
 .introduce-subtitle {
-    width: 80%;
+    text-align: center;
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .introduce-description {
-    padding: 20px 0;
-    width: 80%;
+    padding: 40px 0;
+    text-align: center;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
-
 .button-container {
-    width: 80%;
+    text-align: center;
     margin: 0 auto;
     padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.button-style {
+    font-size: 1.1rem;
 }
 button {
+    gap: 20px;
     padding: 10px 20px;
-    margin-right: 1.5%;
-    font-size: 1rem;
+    
+    font-size: 5rem;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -46,11 +48,9 @@ button:hover {
     background-color: green;
 }
 
-@media (min-width: 320px) and (max-width: 728px) {
-.introduce-me{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
+@media (min-width: 320px) and (max-width: 768px) {
+.introduce-me {
+    min-height: 0;
 }
 .introduce-title {
     font-size: 1.7rem;
@@ -60,17 +60,18 @@ button:hover {
     font-size: 1.5rem;
 }
 .introduce-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 20px ;
 }
 .button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    gap: 10px;
 }
-button {
-    width: 70%;
-    margin: 10px 0;
-    font-size: 0.8rem;
+.button-style {
+    font-size: 1rem;
+    width: 200px;
 }
+
 }

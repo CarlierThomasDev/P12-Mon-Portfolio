@@ -7,9 +7,9 @@
     background-position: top;
 }
 .about-title {
-    width: 80%;  
+    width: 90%;  
     margin: 0 auto;
-    font-size: 3.5rem;  
+    font-size: 3rem;  
     margin-bottom: 20px;  
     color: #f8f8f8;  
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
@@ -23,8 +23,9 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     padding: 40px;
     display: flex;  
-    flex-direction: column;  
-    align-items: center;  
+    flex-direction: row; 
+    justify-content: center;  
+    align-items: flex-start;  
     gap: 40px;  
 }
 .profile-card {
@@ -42,13 +43,13 @@ img.profile-photo {
     margin-bottom: 20px;
 }
 .profile-name {
-    font-size: 2.8rem;  
+    font-size: 2rem;  
     color: green;  
-    margin-bottom: 5px;
+    margin: ;
     line-height: 1.2;
 }
 .profile-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #f8f8f8;  
     font-weight: 300;
     margin-bottom: 30px; 
@@ -56,66 +57,12 @@ img.profile-photo {
 .bio-content {
     text-align: left;  
     line-height: 1.7;  
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     max-width: 700px;  
-}
-.bio-content h2 {
-    font-size: 2.2rem;
-    color: #f8f8f8;
-    margin-bottom: 25px;
-    text-align: center;  
 }
 .bio-content p {
     margin-bottom: 15px;  
     color: #c0c0c0;  
-}
-
-@media (min-width: 769px) { 
-.about-container {
-    flex-direction: row;  
-    justify-content: center;  
-    align-items: flex-start;  
-    text-align: left;  
-    padding: 60px;  
-    }
-.profile-card {
-    flex: 0 0 250px;  
-    margin-right: 40px;  
-    text-align: center;
-    }
-.bio-content {
-    flex: 1;  
-    margin-top: 0;
-    }
-}
-
-@media (max-width: 480px) {
-.about-title {
-    font-size: 2rem;
-    }
-.about-section {
-    padding: 50px 15px;
-    }
-.about-container {
-    padding: 25px;
-    gap: 30px;
-    }
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    }
-.profile-name {
-    font-size: 2.2rem;
-    }
-.profile-title {
-    font-size: 1.2rem;
-    }
-.bio-content h2 {
-    font-size: 2rem;
-    }
-.bio-content p {
-    font-size: 1rem;
-    }
 }
 
 /* bouton envoyer le CV */
@@ -144,16 +91,39 @@ img.profile-photo {
     transform: translateY(-2px);  
 }
 
-/* ... (Vos media queries existantes pour le responsive) ... */
-
-@media (min-width: 769px) {
+@media (min-width: 320px) and (max-width: 768px) {
+.about-title{
+    font-size: 1.7rem;
+}
+.about-container {
+    flex-direction: column;  
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.profile-card {
+    margin-top: 0;  
+}
+img.profile-photo {
+    width: 100px;  
+    height: 100px;  
+}
+.profile-name{
+    font-size: 1.5rem;  
+} 
+.profile-title {
+    font-size: 1rem;   
+    }   
 .bio-content {
-        text-align: left; 
-    }
-
+    text-align: left;  
+    max-width: 600px;
+    margin: 0;
+}
+.bio-content p {
+    font-size: 1rem;
+}    
     .cv-link-container {
-        text-align: center;
-        margin-left: auto; 
-        margin-right: auto;
+        text-align: center;  
+        margin-top: 20px; 
     }
 }

@@ -94,8 +94,8 @@ export default function Projets() {
               </div>
 
               {/* Le bouton pour afficher/masquer */}
-              <button
-                className="toggle-project-description-button"
+              <button 
+                className="toggle-project-description-button bouton"
                 onClick={() => toggleDescriptionVisibility(project.id)}
                 aria-expanded={visibleDescriptions[project.id]}
                 aria-label={visibleDescriptions[project.id] ? "Masquer la description" : "Afficher la description"}

@@ -1,24 +1,24 @@
 .projects-section {
     background-color: #1a1a1a; /* Fond sombre */
-    /* padding: 80px 20px; */
     color: #f8f8f8;
     text-align: center;
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
 }
 
 .projects-container {
-    max-width: 1200px; /* Plus large pour la grille de projets */
+    width: 90%; /* Ajustez la largeur pour qu'elle soit plus large */
     margin: 0 auto;
     padding: 20px;
 }
 
 .projects-container h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: green; /* Votre couleur verte */
     margin-bottom: 20px;
 }
 
 .projects-intro {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-bottom: 40px;
     line-height: 1.5;
     color: #c0c0c0;
@@ -28,10 +28,10 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Garde cette base */
-  gap: 50px; /* AUGMENTE cette valeur, par exemple 50px ou 60px */
+  gap: 20px; /* AUGMENTE cette valeur, par exemple 50px ou 60px */
   justify-content: center;
   align-items: flex-start; /* Important pour que les cartes s'alignent en haut */
-  padding: 20px; /* Ajoute un padding pour que les cartes ne touchent pas les bords de l'écran */
+  padding-top: 200px; /* Ajoute un padding pour que les cartes ne touchent pas les bords de l'écran */
 }
 
 .project-card {
@@ -87,7 +87,7 @@
 }
 
 .overlay-button {
-    background-color: green; /* Bouton avec votre vert */
+    background-color: green;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -101,13 +101,15 @@
     background-color: darkgreen;
 }
 
-button{
-    background: green;
-    color: #f8f8f8;
+.bouton{
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    color: green;
     font-size: 1.5rem;
 }
 
-button:hover {
+.bouton:hover {
     background: darkgreen;
 }
 
@@ -180,9 +182,9 @@ button:hover {
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+        /* grid-template-columns: 1fr;  */
         padding: 0 10px;
     }
     button{
@@ -190,7 +192,7 @@ button:hover {
 }
 
     .project-info h3 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .project-image-wrapper {
@@ -200,12 +202,19 @@ button:hover {
 
 @media (max-width: 480px) {
     .projects-section {
-        padding: 50px 10px;
+        padding: 10px 10px;
     }
     .projects-container h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .projects-intro {
+        font-size: 1rem;
+    }
+    .project-info h3{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .project-description {
         font-size: 1rem;
     }
     .project-info {

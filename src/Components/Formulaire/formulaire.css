@@ -1,19 +1,19 @@
 .formulaire {
+    width: 90%;
     margin: 0 auto;
-    padding: 0 20%;
 }
 .formulaire-intro-texte {
     padding: 20px 0;
 }
 .formulaire-intro-titre {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: green;
     font-weight: bold;
     margin: 0;
     
 }
 .formulaire-intro-description {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #f8f8f8;
     margin: 10px 0;
 }
@@ -39,7 +39,7 @@
 }
 .form-field-group label {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #f8f8f8;
     margin-bottom: 5px;
 }
@@ -51,7 +51,7 @@
 .form-field-group textarea {
     width: 100%; /* Prend toute la largeur disponible de son parent */
     padding: 10px;
-    border: 3px solid green;
+    border: 1px solid gray;
     color: #f8f8f8;
     background-color: black; /* Fond sombre pour le contraste */
     border-radius: 5px;
@@ -69,6 +69,9 @@
     font-size: 1rem;
     margin-top: 5px;
     margin-bottom: 0;
+}
+.item-4 textarea {
+    height: 200px; /* Hauteur fixe pour le champ de message */
 }
 /* Style pour le groupe de champ pleine largeur (message) */
 .full-width-group {
@@ -142,7 +145,7 @@ label {
     }
 
 .form-field-group label {
-    font-size: 1.8rem; 
+    font-size: 1.5rem; 
 }
 
 }

@@ -1,6 +1,6 @@
 // src/components/Header.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {NavLink, Link } from 'react-router-dom';
 import './header.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -28,9 +28,9 @@ export default function Header() {
 
       {/* Navigation Desktop */}
       <nav className="header-nav header-nav-desktop">
-        <Link to="/about">À propos</Link>
-        <Link to="/projects">Projets</Link>
-        <Link to="/Contacts">Contact</Link>
+        <NavLink to="/about" className="header-link" onClick={closeMenu}>À propos</NavLink> {/* AJOUT DE className */}
+        <NavLink to="/projects" className="header-link" onClick={closeMenu}>Projets</NavLink> {/* AJOUT DE className */}
+        <NavLink to="/Contacts" className="header-link" onClick={closeMenu}>Contact</NavLink> {/* AJOUT DE className */}
       </nav>
 
       {/* Bouton Hamburger */}

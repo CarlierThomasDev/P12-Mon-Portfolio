@@ -3,16 +3,10 @@ import "./formation.css";
 
 const formations = [
   {
-    year: '2023',
-    title: 'MOOC HTML et CSS',
+    year: '2024 - 2025',
+    title: 'Développeur Web',
     school: 'OpenClassrooms',
-    description: 'Acquisition des fondamentaux du développement web : structuration de contenu avec HTML et stylisation avancée avec CSS.',
-  },
-  {
-    year: '2024',
-    title: 'MOOC JavaScript',
-    school: 'OpenClassrooms',
-    description: 'Apprentissage des bases de la logique de programmation et de l\'interactivité côté client avec JavaScript.',
+    description: 'Parcours complet en développement Front-end : maîtrise de HTML, CSS (SCSS/SASS), JavaScript, React et Redux. Axé sur la création d\'applications web modernes et performantes.',
   },
   {
     year: '2024',
@@ -21,10 +15,16 @@ const formations = [
     description: 'Formation intensive couvrant HTML, CSS, JavaScript et les principes du design web, axée sur la pratique et les projets concrets.',
   },
   {
-    year: '2024 - 2025',
-    title: 'Développeur Web',
+    year: '2024',
+    title: 'MOOC JavaScript',
     school: 'OpenClassrooms',
-    description: 'Parcours complet en développement Front-end : maîtrise de HTML, CSS (SCSS/SASS), JavaScript, React et Redux. Axé sur la création d\'applications web modernes et performantes.',
+    description: 'Apprentissage des bases de la logique de programmation et de l\'interactivité côté client avec JavaScript.',
+  },
+  {
+    year: '2023',
+    title: 'MOOC HTML et CSS',
+    school: 'OpenClassrooms',
+    description: 'Acquisition des fondamentaux du développement web : structuration de contenu avec HTML et stylisation avancée avec CSS.',
   },
 ];
 

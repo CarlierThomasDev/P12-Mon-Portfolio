@@ -1,4 +1,4 @@
-import backgroundImage from "../../assets/arrierePlanIntroduce.webp";
+// import backgroundImage from "../../assets/arrierePlanIntroduce.webp";
 import "./introduce.css";
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ export default function Introduce() {
   return (
     <section
       className="introduce-me relative h-screen bg-no-repeat bg-center bg-cover text-white"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
     
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -20,19 +20,19 @@ Collaborons pour concrétiser vos projets les plus innovants.<br/> Que ce soit �
       </div>
 
       <div className="button-container">
-        <button
+        <button className="button-style"
           onClick={() => window.location.href = "mailto:carlierthomas1@hotmail.fr"}
         >
           Contactez-moi
         </button>
 
-      <button
+      <button className="button-style"
         onClick={() => window.open("https://github.com/CarlierThomasDev", "_blank")}
       >
         Voir sur GitHub
       </button>
 
-      <button
+      <button className="button-style"
         onClick={() => window.open("https://drive.google.com/file/d/1kmE3hu96lBnUmqWvld_fJH3NaX9Lmb9r/view?usp=drive_link", "_blank")}
       >
         Télécharger mon CV

@@ -1,32 +1,32 @@
 .contact-me {
-    background: rgb(0, 19, 4);
+    background: black;
 }
 .contact-me-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .contact-me-title{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #f8f8f8;
     margin: 0;
-    padding: 15px 0;
-
+    padding: 25px 0 0;
+    text-align: center;
 }
 .contact-me-description {
     font-size: 2rem;
     color: #f8f8f8;
     margin: 0;
-    padding: 15px 0;
-    
+    text-align: center; 
 }
 .contact-me-link {
     padding: 40px 0;
+    text-align: center;
 }
 .contact-me-link a {
     color: #f8f8f8;
     background-color: green;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px;
     border-radius: 25px;
 }
@@ -35,18 +35,18 @@
 }
 .contact-me-accroche {
     color: #f8f8f8;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
     padding-bottom: 25px;
+    text-align: center;
 }
-
 
 @media (min-width: 320px) and (max-width: 728px) {
 .contact-me-container {
     width: 90%;
 }
 .contact-me-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 15px 0;
 }
 .contact-me-description {
@@ -54,11 +54,11 @@
     
 }
 .contact-me-link a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px;
 }
 .contact-me-accroche {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 15px;
 }
 }

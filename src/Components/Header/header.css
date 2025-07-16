@@ -29,6 +29,9 @@
 .header-nav a:hover {
     background-color: green;
 }
+.header-nav a.active {
+    background-color: green;
+}
 .hamburger-icon{
     display: none;
 }
