@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './MobileNavModal.css'; 
+import './mobileNavModal.css'; 
 
 export default function MobileNavModal({ isOpen, onClose }) {
   if (!isOpen) {
