@@ -9,7 +9,7 @@ export default function Biographie() {
       <div className="about-container">
         <div className="profile-card">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4E35AQFDMAf-R6plGA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735811253702?e=1752750000&v=beta&t=pfGuRp9iH4ltCGr47w28DFlw1WHEWpDoibhEeUgVHq0"
+            src="https://user.oc-static.com/users/avatars/17338247717429_tc.jpg"
             alt="Votre Photo de Profil"
             className="profile-photo"
           />

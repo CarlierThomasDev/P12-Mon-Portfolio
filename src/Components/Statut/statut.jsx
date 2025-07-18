@@ -93,7 +93,7 @@ export default function Statut() {
         </a>
 
         <a href="https://www.linkedin.com/in/thomas-carlier-0814b8171/" target="_blank" rel="noopener noreferrer" className="contact-item">
-            <img src="https://media.licdn.com/dms/image/v2/D4E35AQFDMAf-R6plGA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735811253702?e=1752652800&v=beta&t=WYq-nQid4DGZ51F-tsYRR9SX6VdWjUTeblhu6Jg5--s" alt="Photo de profil LinkedIn" className="contact-profile-img"/>
+            <img src="https://media.licdn.com/dms/image/v2/D4E35AQFDMAf-R6plGA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735811253702?e=1753272000&v=beta&t=FqhXKpudlU-lRfMC-59RzPDLAyU4EDPlDL-M1EeS9FI" alt="Photo de profil LinkedIn" className="contact-profile-img"/>
             <div className="contact-details">
                 <p className="contact-titles">Linkedin</p>
                 {/* <p className="contact-info">107 connexions</p> */}
